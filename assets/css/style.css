@@ -1,5 +1,43 @@
-body {
-  margin: 0;
+.container {
+  max-width: 1773px;
+  width: 100%;
+  margin: auto;
+}
+
+.main {
+  width: 100%;
+}
+.main__item--herobg {
+  background-image: url("../img/hero.png") top/cover no-repeat;
+}
+.main__item--blue {
+  background-color: #5474FD;
+}
+.main__item .nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 27px;
+}
+.main__item .nav__logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: 700;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  color: #ffff;
+  text-decoration: none;
+}
+.main__item .social {
+  display: flex;
+  gap: 20px;
+}
+.main__item .social__link {
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

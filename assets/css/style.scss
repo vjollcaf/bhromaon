@@ -1,4 +1,61 @@
-body{
-    margin: 0 
-    ;
+$fontFamilyFirst:'Josefin Sans', sans-serif;
+$fontFamilySecond:'Aleo', serif;
+$bold:700;
+$regular:400;
+$mainColor:#ffff;
+$secondColor:#5474FD;
+
+
+.container{
+    max-width: 1773px;
+    width: 100%;
+    margin: auto;
 }
+
+
+.main{
+    width: 100%;
+
+  
+
+    &__item{
+
+        &--herobg{
+            background-image: url("../img/hero.png") top/cover no-repeat;
+        }
+        
+        &--blue{
+            background-color: $secondColor;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 27px;
+
+            &__logo{
+                font-family: $fontFamilyFirst;
+                font-style: $bold;
+                font-size: 24px;
+                line-height: 26px;
+                letter-spacing: 2.4px;
+                color: $mainColor;
+                text-decoration: none;  
+            }
+        }
+        
+        .social{
+            display: flex;
+            gap:20px;
+
+            &__link{
+                text-decoration: none;
+                color: $mainColor;
+                font-family: $fontFamilySecond;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 1px;
+            }
+        }
+        }
+    }
