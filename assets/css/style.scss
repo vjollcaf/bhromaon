@@ -60,6 +60,7 @@ $secondColor:#5474FD;
             &--reviewbg{
                 background-image:url('/assets/img/tourist1.png');
                 padding: 128px 200px;
+                background-size: cover;
 
             }
             &--footer{
@@ -495,7 +496,7 @@ $secondColor:#5474FD;
                     }
 
                     .gallery{
-                        max-width: 350px;
+                        // max-width: 350px;
 
                         &__img--left{
                             margin-top: 10px;
@@ -585,4 +586,164 @@ $secondColor:#5474FD;
         }
 
        
+    }
+
+
+    @media only  screen and(max-width:667px){
+        .main__item{
+
+            .nav{
+
+                .social{
+                     flex-direction: column;
+                     display: none;
+                }
+            }
+            &--herobg{
+                padding: 100px 100px;
+
+            }
+
+            &--explore{
+                padding: 100px 100px;
+            }
+
+            .explorewrap{
+                flex-direction: column-reverse;
+                padding: 20px 20px;
+
+                .explore{
+                    padding: 20px 20px;
+                }
+                .gallery{
+                    max-width: 70%;
+                }
+            }
+
+            
+            &--features{
+                .features{
+                    flex-direction: column;
+                    gap: 0;
+                    padding: 40px 20px;
+
+                    &__item{
+                        gap: 0;
+                    }
+
+                    &__description{
+                        margin-bottom: 30px;
+                        font-size: 30px;
+                    }
+                }
+
+                .svg{
+                    height: 50px;
+                }
+
+            }
+
+            &--testimonials{
+                .btn.btn--book{
+                    padding: 15px 15px;
+                }
+                .testimonials{
+                &--left{
+                    width: 84%;
+                    padding: 25px 50px;
+                    margin: 0 auto;
+                }
+            }
+               
+            }
+
+            &--testimonialstwo{
+                .btn.btn--book{
+                    padding: 15px 15px;
+                }
+                .testimonials{
+                    &--right{
+                    width: 84%;
+                    padding: 25px 50px;
+                    margin: 0 auto;
+                     }
+              }
+            }
+
+            &--reviewbg{
+               
+                padding: 80px 70px;
+                
+                .review{
+
+                    &box{
+                        flex-direction: column;
+                    }
+
+                    &box__img{
+                        max-width: 100%;
+                    }
+                    .client{
+                        max-width: 100%;
+                    }
+                
+                }
+
+                
+            }
+
+        }
+    }
+
+
+    @media only  screen and (max-width:992px){
+        .main__item{
+             .btn.btn{
+                 padding:15px 15px;
+             }
+            &--herobg{
+                padding: 60px 0;  
+                .hero{
+                    &__search{
+                    max-width: 500px;
+                    }
+                }
+            }
+            &--explore{
+                .explorewrap{
+                    flex-direction: column-reverse;
+                    .explore{
+                        padding: 90px 200px;
+                        &__description{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            &--reviewbg{
+                .review{
+                    .reviewbox{
+                        display: flex;
+                        flex-direction: column;
+
+                    &__img, .client{
+                        max-width: 100%;
+                    }                 
+                    }
+                }            
+            }
+        }
+        
+    }
+
+
+    
+    @media only  screen and (max-width:1280px){
+        .main .hero__search{
+            width: 500px;
+        }
+
+        .main .client{
+            padding: 12px 20px;
+        }
     }

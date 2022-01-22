@@ -42,6 +42,7 @@
 .main__item--reviewbg {
   background-image: url("/assets/img/tourist1.png");
   padding: 128px 200px;
+  background-size: cover;
 }
 .main__item--footer {
   background-color: #232323;
@@ -382,9 +383,6 @@
     margin-bottom: 14px;
     padding: 0 75px;
   }
-  .main__item--explore .explorewrap .gallery {
-    max-width: 350px;
-  }
   .main__item--explore .explorewrap .gallery__img--left {
     margin-top: 10px;
   }
@@ -433,6 +431,107 @@
   }
   .main__item--reviewbg .review .client {
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .main__item .nav .social {
+    flex-direction: column;
+    display: none;
+  }
+  .main__item--herobg {
+    padding: 100px 100px;
+  }
+  .main__item--explore {
+    padding: 100px 100px;
+  }
+  .main__item .explorewrap {
+    flex-direction: column-reverse;
+    padding: 20px 20px;
+  }
+  .main__item .explorewrap .explore {
+    padding: 20px 20px;
+  }
+  .main__item .explorewrap .gallery {
+    max-width: 70%;
+  }
+  .main__item--features .features {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .main__item--features .features__item {
+    gap: 0;
+  }
+  .main__item--features .features__description {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .main__item--features .svg {
+    height: 50px;
+  }
+  .main__item--testimonials .btn.btn--book {
+    padding: 15px 15px;
+  }
+  .main__item--testimonials .testimonials--left {
+    width: 84%;
+    padding: 25px 50px;
+    margin: 0 auto;
+  }
+  .main__item--testimonialstwo .btn.btn--book {
+    padding: 15px 15px;
+  }
+  .main__item--testimonialstwo .testimonials--right {
+    width: 84%;
+    padding: 25px 50px;
+    margin: 0 auto;
+  }
+  .main__item--reviewbg {
+    padding: 80px 70px;
+  }
+  .main__item--reviewbg .reviewbox {
+    flex-direction: column;
+  }
+  .main__item--reviewbg .reviewbox__img {
+    max-width: 100%;
+  }
+  .main__item--reviewbg .review .client {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main__item .btn.btn {
+    padding: 15px 15px;
+  }
+  .main__item--herobg {
+    padding: 60px 0;
+  }
+  .main__item--herobg .hero__search {
+    max-width: 500px;
+  }
+  .main__item--explore .explorewrap {
+    flex-direction: column-reverse;
+  }
+  .main__item--explore .explorewrap .explore {
+    padding: 90px 200px;
+  }
+  .main__item--explore .explorewrap .explore__description {
+    font-size: 18px;
+  }
+  .main__item--reviewbg .review .reviewbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__item--reviewbg .review .reviewbox__img, .main__item--reviewbg .review .reviewbox .client {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .main .hero__search {
+    width: 500px;
+  }
+
+  .main .client {
+    padding: 12px 20px;
   }
 }
 
