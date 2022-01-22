@@ -452,7 +452,7 @@
     padding: 20px 20px;
   }
   .main__item .explorewrap .gallery {
-    max-width: 70%;
+    max-width: 100%;
   }
   .main__item--features .features {
     flex-direction: column;
@@ -511,9 +511,6 @@
   .main__item--explore .explorewrap {
     flex-direction: column-reverse;
   }
-  .main__item--explore .explorewrap .explore {
-    padding: 90px 200px;
-  }
   .main__item--explore .explorewrap .explore__description {
     font-size: 18px;
   }
@@ -532,6 +529,17 @@
 
   .main .client {
     padding: 12px 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main__item--herobg .hero__search {
+    max-width: 250px;
+  }
+  .main__item--herobg .hero__input {
+    font-size: 10px;
+  }
+  .main__item--herobg .hero .btn--search {
+    padding: 16px 7px;
   }
 }
 

@@ -616,7 +616,8 @@ $secondColor:#5474FD;
                     padding: 20px 20px;
                 }
                 .gallery{
-                    max-width: 70%;
+                    max-width: 100%;
+                    // max-width: 70%; po e prish te screen 600px
                 }
             }
 
@@ -713,7 +714,7 @@ $secondColor:#5474FD;
                 .explorewrap{
                     flex-direction: column-reverse;
                     .explore{
-                        padding: 90px 200px;
+                        // padding: 90px 200px; spo bon mire te screen 600
                         &__description{
                             font-size: 18px;
                         }
@@ -747,3 +748,90 @@ $secondColor:#5474FD;
             padding: 12px 20px;
         }
     }
+
+    @media only  screen and (max-width:375px){
+        .main__item{
+            &--herobg{
+                 
+                .hero{
+                    &__search{
+                     max-width: 250px;
+                    }
+
+                    &__input{
+                        font-size: 10px;
+                    }
+
+                    .btn--search{
+                        padding: 16px 7px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // @media only  screen and (min-width:375px){
+    //     .main__item{
+    //         &--herobg{
+    //             .hero{
+    //                 &__search{
+    //                  max-width: 250px;
+    //                 }
+
+    //                 &__input{
+    //                     font-size: 10px;
+    //                 }
+
+    //                 .btn--search{
+    //                     padding: 16px 7px;
+    //                 }
+    //             }
+    //         }
+
+    //         &--explore{
+    //             padding:0;
+
+    //             .explorewrap{
+    //                 padding: 0;
+                    
+    //                 .explore{
+    //                     padding: 22px 32px;
+    //                 }
+
+    //                 .gallery{
+    //                     // max-width: 94%; po e shfaq mire ne iphone SE, po jo ne main screen
+    //                      padding: 20px 0;
+    //                 }
+    //             }
+    //         }
+
+    //         &--testimonials{
+    //             .testimonials{
+    //                 &--left{
+    //                     width: 100%;
+    //                 }
+    //             }
+    //         }
+    //         &--testimonialstwo{
+    //             .testimonials{
+    //                 &--right{
+    //                     width: 100%;
+    //                 }
+    //             }
+    //         }
+
+    //         &--reviewbg{
+    //             .review{
+    //                 &__heading{
+    //                     line-height: 33px;
+    //                     margin-bottom:33px;
+    //                 }
+    //             }
+    //         }
+
+    //         .btn{
+    //             padding: 15px 15px;
+    //         }
+    //     }
+    // }
