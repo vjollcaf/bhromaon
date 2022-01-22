@@ -341,4 +341,99 @@
   padding: 3px 3px 0px 3px;
 }
 
+@media only screen and (max-width: 600px) {
+  .nav {
+    justify-content: start;
+  }
+  .nav__logo {
+    margin-right: auto;
+  }
+  .nav .social {
+    flex-direction: column;
+    display: none;
+  }
+
+  .main__item--herobg {
+    padding: 20px 20px;
+  }
+  .main__item--herobg .hero__title {
+    font-size: 22px;
+  }
+  .main__item--herobg .hero__description {
+    font-size: 11px;
+    margin-bottom: 30px;
+  }
+  .main__item--herobg .hero__search {
+    max-width: 350px;
+  }
+  .main__item--herobg .hero__input {
+    width: 60%;
+    font-size: 11px;
+  }
+  .main__item--herobg .hero .btn--search {
+    padding: 16px 17px;
+  }
+  .main__item--explore .explorewrap {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 5px 0;
+  }
+  .main__item--explore .explorewrap .explore {
+    margin-bottom: 14px;
+    padding: 0 75px;
+  }
+  .main__item--explore .explorewrap .gallery {
+    max-width: 350px;
+  }
+  .main__item--explore .explorewrap .gallery__img--left {
+    margin-top: 10px;
+  }
+  .main__item--explore .explorewrap .gallery__img--right {
+    display: none;
+  }
+  .main__item--explore .explorewrap .btn--explore {
+    padding: 15px 15px;
+  }
+  .main__item--features .features {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .main__item--features .features__item {
+    gap: 0;
+  }
+  .main__item--features .features__description {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .main__item--features .svg {
+    height: 50px;
+  }
+  .main__item--testimonials .btn.btn--book {
+    padding: 15px 15px;
+  }
+  .main__item--testimonials .testimonials--left {
+    width: 84%;
+    padding: 25px 50px;
+    margin: 0 auto;
+  }
+  .main__item--testimonialstwo .btn.btn--book {
+    padding: 15px 15px;
+  }
+  .main__item--testimonialstwo .testimonials--right {
+    width: 84%;
+    padding: 25px 50px;
+    margin: 0 auto;
+  }
+  .main__item--reviewbg {
+    padding: 80px 70px;
+  }
+  .main__item--reviewbg .reviewbox {
+    flex-direction: column;
+  }
+  .main__item--reviewbg .review .client {
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

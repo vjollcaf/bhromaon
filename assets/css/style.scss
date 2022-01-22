@@ -439,3 +439,150 @@ $secondColor:#5474FD;
 
 
 
+    @media only screen and (max-width: 600px){
+        .nav{
+            justify-content: start;
+
+            &__logo{
+                margin-right: auto;
+            }
+            .social{
+                flex-direction: column;
+                display: none;
+            }
+        }
+
+        .main__item{
+            &--herobg{
+                padding: 20px 20px;
+
+                .hero{
+
+                    &__title{
+                        font-size: 22px;
+                    }
+
+                    &__description{
+                        font-size: 11px;
+                        margin-bottom: 30px;
+                    }
+
+                    &__search{
+                        max-width: 350px;
+                    }
+
+                    &__input{
+                        width: 60%;
+                        font-size: 11px;
+                    }
+
+                    .btn--search{
+                        padding:16px 17px;
+
+                    }
+                }
+            }
+
+            &--explore{
+                .explorewrap{
+                    flex-wrap: wrap;
+                    flex-direction: column-reverse;
+                    padding: 5px 0;
+
+                    .explore{
+                        margin-bottom: 14px;
+                        padding: 0 75px;
+                    }
+
+                    .gallery{
+                        max-width: 350px;
+
+                        &__img--left{
+                            margin-top: 10px;
+                        }
+                        &__img--right{
+                            display: none;
+                        }
+                    }
+
+                    .btn--explore{
+                        padding: 15px 15px;
+                    }
+                }
+            }
+
+            &--features{
+                .features{
+                    flex-direction: column;
+                    gap: 0;
+                    padding: 40px 20px;
+
+                    &__item{
+                        gap: 0;
+                    }
+
+                    &__description{
+                        margin-bottom: 30px;
+                        font-size: 30px;
+                    }
+                }
+
+                .svg{
+                    height: 50px;
+                }
+
+            }
+
+            &--testimonials{
+                .btn.btn--book{
+                    padding: 15px 15px;
+                }
+                .testimonials{
+                &--left{
+                    width: 84%;
+                    padding: 25px 50px;
+                    margin: 0 auto;
+                }
+            }
+               
+            }
+
+            &--testimonialstwo{
+                .btn.btn--book{
+                    padding: 15px 15px;
+                }
+                .testimonials{
+                    &--right{
+                    width: 84%;
+                    padding: 25px 50px;
+                    margin: 0 auto;
+                     }
+              }
+            }
+
+            &--reviewbg{
+               
+                padding: 80px 70px;
+                
+                .review{
+
+                    &box{
+                        flex-direction: column;
+                    }
+
+                    .client{
+                        max-width: 100%;
+                    }
+                
+                }
+
+                
+            }
+
+
+
+
+        }
+
+       
+    }
