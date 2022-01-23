@@ -66,6 +66,11 @@ $secondColor:#5474FD;
             &--footer{
                 background-color: #232323;
             }
+
+            &--formbg{
+                padding: 70px;
+                background: #2222221c;
+            }
         }
     
         .nav{
@@ -581,6 +586,7 @@ $secondColor:#5474FD;
         .main__item{
 
             .nav{
+               display: block;
                 justify-content: space-around;
 
                 &__menubar{
@@ -599,6 +605,7 @@ $secondColor:#5474FD;
                 #myNav.social.responsive{
                     display: flex;
                     margin: 0 auto;
+                    flex-direction: row;
                     margin-top: 20px;
                    
                     .navbar__menu.responsive{
@@ -720,6 +727,15 @@ $secondColor:#5474FD;
              .btn.btn{
                  padding:15px 15px;
              }
+
+             #myNav.social.responsive{
+                display: flex;
+                margin: 0 auto;
+                flex-direction: row;
+                margin-top: 20px;
+            }
+
+
             &--herobg{
                 padding: 60px 0;  
                 .hero{
@@ -853,3 +869,63 @@ $secondColor:#5474FD;
     //         }
     //     }
     // }
+
+
+
+    //form
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+    margin:0 auto;
+  
+    &__title{
+        text-align: center;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 4.8px;
+        color: $secondColor;
+    }
+
+    &__description{
+        color: black;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        opacity: 60%;
+    }
+
+    &__label{
+        max-width: 30%;
+        background: #5474fd;
+        border-radius: 4px 2px;
+        padding: 3px 3px;
+        margin-bottom: -2px;
+        border-bottom: none;
+        color: white;
+        font-family: sans-serif;
+    }
+    &__input{
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        max-width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    
+    .btn{
+        &--submitform{
+            max-width: 30%;
+            border: none;
+            align-self: center;
+            padding: 15px 40px;
+        }
+    }
+}
