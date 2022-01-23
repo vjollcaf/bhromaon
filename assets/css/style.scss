@@ -68,7 +68,11 @@ $secondColor:#5474FD;
             }
         }
     
-
+        .nav{
+            &__menubar{
+                display: none;
+            }
+        }
         .social{
             display: flex;
             gap:20px;
@@ -164,6 +168,7 @@ $secondColor:#5474FD;
             display: flex;
             justify-content: space-around;
             padding: 30px 27px;
+            // flex-direction: column;
 
             &__logo{
                 font-family: $fontFamilyFirst;
@@ -517,21 +522,17 @@ $secondColor:#5474FD;
                     flex-direction: column;
                     gap: 0;
                     padding: 40px 20px;
-
                     &__item{
                         gap: 0;
                     }
-
                     &__description{
                         margin-bottom: 30px;
                         font-size: 30px;
                     }
                 }
-
                 .svg{
                     height: 50px;
                 }
-
             }
 
             &--testimonials{
@@ -561,42 +562,59 @@ $secondColor:#5474FD;
               }
             }
 
-            &--reviewbg{
-               
-                padding: 80px 70px;
-                
+            &--reviewbg{            
+                padding: 80px 70px;             
                 .review{
-
                     &box{
                         flex-direction: column;
                     }
-
                     .client{
                         max-width: 100%;
-                    }
-                
-                }
-
-                
+                    }              
+                }          
             }
-
-
-
-
         }
-
-       
     }
 
-
+ 
     @media only  screen and(max-width:667px){
         .main__item{
 
             .nav{
+                justify-content: space-around;
+
+                &__menubar{
+                    font-size: 26px;
+                    color: #5474fd;
+                    background-color: white;
+                    padding: 6px 8px;
+                    border-radius: 3px;
+                    position: absolute;
+                    right: 5%;
+                    top: 3%; 
+                    display: block;
+                   
+                }
+
+                #myNav.social.responsive{
+                    display: flex;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                   
+                    .navbar__menu.responsive{
+                        overflow: hidden;
+                    }
+
+                }
 
                 .social{
-                     flex-direction: column;
+                    //  flex-direction: column;
                      display: none;
+                    
+                }
+
+                .nav.responsive .social{
+                    display: block;
                 }
             }
             &--herobg{

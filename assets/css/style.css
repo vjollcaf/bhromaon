@@ -47,6 +47,9 @@
 .main__item--footer {
   background-color: #232323;
 }
+.main .nav__menubar {
+  display: none;
+}
 .main .social {
   display: flex;
   gap: 20px;
@@ -434,9 +437,33 @@
   }
 }
 @media only screen and (max-width: 667px) {
+  .main__item .nav {
+    justify-content: space-around;
+  }
+  .main__item .nav__menubar {
+    font-size: 26px;
+    color: #5474fd;
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 3px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    display: block;
+  }
+  .main__item .nav #myNav.social.responsive {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .main__item .nav #myNav.social.responsive .navbar__menu.responsive {
+    overflow: hidden;
+  }
   .main__item .nav .social {
-    flex-direction: column;
     display: none;
+  }
+  .main__item .nav .nav.responsive .social {
+    display: block;
   }
   .main__item--herobg {
     padding: 100px 100px;

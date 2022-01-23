@@ -32,7 +32,8 @@
         <div class="main__item main__item--blue">
           <nav class="nav">
             <a class="nav__logo" href="">BHROMAON</a>
-            <ul class="social">
+            <a class="nav__menubar" href="#" onclick="burgerMenu()"><i class="fas fa-bars"></i></a>
+            <ul class="social" id="myNav">
               <li class="social__item"><a  class="social__link" href="">WHO WE ARE</a></li>
               <li class="social__item"><a  class="social__link" href="">WHAT WE DO</a></li>
               <li class="social__item"><a  class="social__link" href="">TRAVEL WITH US</a></li>
@@ -164,6 +165,20 @@
     </section>
 
   </main>
+
+
+
+
+  <script>
+    function burgerMenu() {
+      var x = document.getElementById("myNav");
+      if (x.className === "social") {
+        x.className += " responsive";
+      } else {
+        x.className = "social";
+      }
+    }
+    </script>
 
 </body>
 </html>
