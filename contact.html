@@ -55,11 +55,11 @@
             <label class="form__label" for="lastname">Last name</label>
             <input class="form__input" type="text" name="lastname" id="lastname" placeholder="Last name" required>
             <label class="form__label" for="email">Email</label>
-            <input class="form__input" type="text" name="email" id="" placeholder="Enter your email">
+            <input class="form__input" type="text" name="email" id="" placeholder="sophie@example.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  size="30" required >
             <label class="form__label"  for="textarea">Your Message</label>
-            <textarea  class="form__input" name="message" cols="30" rows="4" class="textarea" placeholder="Enter your message"></textarea>
+            <textarea  class="form__input" name="message" cols="30" rows="4" class="textarea" placeholder="Enter your message" required></textarea>
 
-            <button class="btn--submitform btn" type="submit">Submit </button>
+            <button class="btn btn--submitform" type="submit">Submit </button>
         </form>
     </section>
    </main>
