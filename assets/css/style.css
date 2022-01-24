@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1773px;
   width: 100%;
@@ -49,7 +53,8 @@
 }
 .main__item--formbg {
   padding: 70px;
-  background: #2222221c;
+  background: url(../img/castle.png);
+  background-size: cover;
 }
 .main .nav__menubar {
   display: none;
@@ -623,37 +628,42 @@
   }
 }
 .form {
+  border-radius: 2% 6%;
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  max-width: 34%;
   width: 100%;
   margin: 0 auto;
+  background: #f5f5f5;
+  padding: 22px 19px;
 }
 .form__title {
   text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 48px;
+  font-family: "Aleo";
+  font-size: 46px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 4.8px;
-  color: #5474FD;
+  color: #ffff;
 }
 .form__description {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  line-height: 26px;
   color: black;
   font-size: 20px;
-  font-family: sans-serif;
   margin-bottom: 10px;
   opacity: 60%;
 }
 .form__label {
-  max-width: 30%;
-  background: rgba(0, 149, 246, 0.3);
+  max-width: 31%;
   border-radius: 4px 2px;
-  padding: 3px 3px;
+  padding: 6px 3px;
   margin-bottom: -2px;
   border-bottom: none;
-  color: white;
+  color: black;
   font-family: sans-serif;
+  opacity: 70%;
 }
 .form__input {
   border: none;
@@ -665,6 +675,9 @@
 .form .btn {
   transition: trasnsform 300ms, background-color 300ms;
   animation: pulse 500ms;
+  font-family: "Aleo", serif;
+  line-height: 26px;
+  color: #ffff;
 }
 .form .btn:hover {
   transform: scale(1.05);
@@ -698,8 +711,8 @@
   padding: 15px 40px;
 }
 
-input:invalid {
-  background-color: #ffdddd;
+input:invalid, textarea:invalid {
+  background-color: #ffdddd4f;
 }
 
 .form__input:valid {

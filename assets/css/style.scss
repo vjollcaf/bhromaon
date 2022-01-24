@@ -5,7 +5,9 @@ $regular:400;
 $mainColor:#ffff;
 $secondColor:#5474FD;
 
-
+html{
+    scroll-behavior: smooth;
+}
 .container{
     max-width: 1773px;
     width: 100%;
@@ -15,13 +17,11 @@ $secondColor:#5474FD;
 
 .main{
   z-index: -1;
-
   .btn{
       background-color: $secondColor;
       font-family: $fontFamilySecond;
       line-height: 26px;
       color: $mainColor;
-
   }
 
     &__item{
@@ -29,22 +29,18 @@ $secondColor:#5474FD;
                 background-image: url(../img/hero1.png);
                 padding: 250px 559px 254px 557px;
                 background-size: cover;
-            }
-            
+            }          
             &--blue{
                 background-color: $secondColor;
             }
-
             &--explore{
                 background-image: url(/assets/img/castle.png);
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-
             &--features{
                 background-color: #333333;
             }
-
             &--testimonials{
                 background:url(/assets/img/bookhouse.png) center/cover no-repeat;
                 background-size: cover;
@@ -56,23 +52,20 @@ $secondColor:#5474FD;
                 background-size: cover;
                 background-repeat: no-repeat;
             }
-
             &--reviewbg{
                 background-image:url('/assets/img/tourist1.png');
                 padding: 128px 200px;
                 background-size: cover;
-
             }
             &--footer{
                 background-color: #232323;
             }
-
             &--formbg{
                 padding: 70px;
-                background: #2222221c;
+                background: url(../img/castle.png);
+                background-size: cover;
             }
-        }
-    
+        }   
         .nav{
             &__menubar{
                 display: none;
@@ -81,7 +74,6 @@ $secondColor:#5474FD;
         .social{
             display: flex;
             gap:20px;
-
             &__link{
                 text-decoration: none;
                 color: $mainColor;
@@ -141,8 +133,6 @@ $secondColor:#5474FD;
                 font-family: 'Josefin Sans';
                 font-weight: $regular;
             }
-
-
             &__scroll{
                 color: $mainColor;
                 font-family: $fontFamilyFirst;
@@ -150,7 +140,6 @@ $secondColor:#5474FD;
                 line-height: 26px;
                 letter-spacing: 2.8px;   
             }
-
             .btn--search{
                 position: absolute;
                 right: 1px;
@@ -166,15 +155,12 @@ $secondColor:#5474FD;
                 letter-spacing: 1.4px;
                 padding: 21px 38px 10px 23px;
             }
-
-        } //hero braclet
-
+        } 
         .nav{
             display: flex;
             justify-content: space-around;
             padding: 30px 27px;
             // flex-direction: column;
-
             &__logo{
                 font-family: $fontFamilyFirst;
                 font-style: $bold;
@@ -193,12 +179,10 @@ $secondColor:#5474FD;
         align-items: center;
         padding: 120px 0;
         z-index: -3;
-
         .explore{
             flex-basis: 50%;
             padding-right: 110px;
             padding-left: 181px;
-
             &__title{
                 font-family: $fontFamilySecond;
                 font-weight: $regular;
@@ -207,7 +191,6 @@ $secondColor:#5474FD;
                 line-height: 26px;
                 margin-bottom: 50px;
             }
-
             &__description{
                 // font-family: $fontFamilyFirst;
                 // font-weight: $regular;
@@ -215,23 +198,19 @@ $secondColor:#5474FD;
                 letter-spacing: 1.03px;
                 color: $mainColor;
                 margin-bottom: 26px;
-
                 &:first-of-type{
                     margin-bottom: 43px;
                 }
-
                 &:not(:first-of-type){
                     margin-bottom: 66px;
                 }
             }
             
-        }
-        
+        }      
         .btn--explore{
             padding: 21px 40px 16px 40px;
             border: none;
         }
-
         .gallery{
             max-width: 436px;
             width: 100%;
@@ -249,8 +228,7 @@ $secondColor:#5474FD;
         }
     }
 
-    //features
-    
+    //features  
     .features{
         display: flex;
         justify-content: center;
@@ -258,32 +236,25 @@ $secondColor:#5474FD;
         align-items: center;
         text-align: center;
         padding: 80px 0 80px 0;
-
         &__item{
             display: flex;
             flex-direction: column;
             gap: 43px
         }
-
         &__link{
             font-size: 72px;
             margin-bottom: 35px;
             font-weight: normal;
         }
-
         &__link--blue{
             color: $secondColor;
         }
-
-
         &__link--red{
             color: #ff6363;
         }
-
         &__link--lightblue{
             color:#00a2ff;
         }
-
         &__description{
             font-family: $fontFamilySecond;
             font-weight: normal;
@@ -294,21 +265,17 @@ $secondColor:#5474FD;
     }
 
     //testimonials
-
     .testimonials{
         padding: 227px 99px;
         color: $mainColor;
-
         &--left, &--right{
             // width: 35%;
            width: 58%;
            padding: 227px 99px;
         }
-
         &--right{
             margin-left: auto;
         }
-
         &__content{
             background-color: rgba(35, 35, 35, 0.9);
             padding: 50px 30px;
@@ -316,19 +283,16 @@ $secondColor:#5474FD;
             width: 100%;
             margin: 0 auto;
         }
-
         &__title{
             margin-bottom: 25px;
         }
         &__heading{
             margin-bottom: 13px;
         }
-
         &__description{
             margin-bottom: 46px;
             letter-spacing: 1px;
         }
-
         .btn--book{
             padding:21px 34px 16px 34px;
             border: none;
@@ -366,21 +330,18 @@ $secondColor:#5474FD;
             max-width: 59%;
             align-self: start;
             background: #333333;
-
             &__name{
                 font-family: 'Poppins' sans-serif;
                 font-size: 20px;
                 line-height: 26px;
                 font-weight: $regular;
             }
-
             &__saying{
                 font-family: $fontFamilyFirst;
                 position: relative;
                 text-indent: 29px;
                 line-height: 1.625;
                 // letter-spacing: -0.58px;
-
                 .fas.fa-quote-left{
                     content: '';
                     color: #5474fd;
@@ -389,8 +350,7 @@ $secondColor:#5474FD;
                     top: -12px;
                     left: -27.5px;
                     
-                }
-               
+                }              
             }
         }
         //footer
@@ -399,9 +359,7 @@ $secondColor:#5474FD;
             color: #ffff;
             margin: 0 auto;
             text-align: center;
-            color: $mainColor;
-       
-
+            color: $mainColor;  
             &__title{
                 font-family: $fontFamilyFirst;
                 font-size: 24px;
@@ -410,21 +368,16 @@ $secondColor:#5474FD;
                 letter-spacing: 3.36px;
                 margin-bottom: 8px;
             }
-
             &__description{
                 margin-bottom: 16px;
-            }
-
-          
+            }        
             .footersocials{
                 display: flex;
                 gap: 25px;
                 justify-content: center;
-
                 &__link{
                     color: $mainColor;
                     font-size: 15px;
-
                     &--blue{
                         color: $secondColor;
                     }
@@ -433,27 +386,14 @@ $secondColor:#5474FD;
                         background-color: white;
                         border-radius:9px;
                         padding: 3px 3px 0px 3px;
-            }
-            
+                    }            
                 }
-
-
             }
-            
         }
-
-        
-
-    
-
     } 
-
-
-
     @media only screen and (max-width: 600px){
         .nav{
             justify-content: start;
-
             &__logo{
                 margin-right: auto;
             }
@@ -462,34 +402,26 @@ $secondColor:#5474FD;
                 display: none;
             }
         }
-
         .main__item{
             &--herobg{
                 padding: 20px 20px;
-
                 .hero{
-
                     &__title{
                         font-size: 22px;
                     }
-
                     &__description{
                         font-size: 11px;
                         margin-bottom: 30px;
                     }
-
                     &__search{
                         max-width: 350px;
                     }
-
                     &__input{
                         width: 60%;
                         font-size: 11px;
                     }
-
                     .btn--search{
                         padding:16px 17px;
-
                     }
                 }
             }
@@ -550,10 +482,8 @@ $secondColor:#5474FD;
                     padding: 25px 50px;
                     margin: 0 auto;
                 }
+            }           
             }
-               
-            }
-
             &--testimonialstwo{
                 .btn.btn--book{
                     padding: 15px 15px;
@@ -566,7 +496,6 @@ $secondColor:#5474FD;
                      }
               }
             }
-
             &--reviewbg{            
                 padding: 80px 70px;             
                 .review{
@@ -580,8 +509,6 @@ $secondColor:#5474FD;
             }
         }
     }
-
- 
     @media only  screen and(max-width:667px){
         .main__item{
             .nav{
@@ -690,11 +617,8 @@ $secondColor:#5474FD;
                      }
               }
             }
-
-            &--reviewbg{
-               
-                padding: 80px 70px;
-                
+            &--reviewbg{             
+                padding: 80px 70px;            
                 .review{
                     &box{
                         flex-direction: column;
@@ -705,13 +629,10 @@ $secondColor:#5474FD;
                     .client{
                         max-width: 100%;
                     }
-                
-                }
-                
+                }    
             }
         }
     }
-
 
     @media only  screen and (max-width:992px){
         .main__item{
@@ -759,14 +680,12 @@ $secondColor:#5474FD;
              .btn.btn{
                  padding:15px 15px;
              }
-
-
             &--herobg{
                 padding: 60px 0;  
                 .hero{
                     &__search{
                         max-width: 350px;
-                        width: 100%;
+                    width: 100%;
                     }
                 }
             }
@@ -902,39 +821,45 @@ $secondColor:#5474FD;
 
 
 .form{
+    border-radius: 2% 6%;
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    max-width: 34%;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding: 22px 19px;
   
     &__title{
         text-align: center;
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 48px;
+        font-family: 'Aleo';
+        font-size: 46px;
         font-weight: 700;
         line-height: 26px;
         letter-spacing: 4.8px;
-        color: $secondColor;
+        color: $mainColor;
     }
 
     &__description{
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        line-height: 26px;
         color: black;
         font-size: 20px;
-        font-family: sans-serif;
         margin-bottom: 10px;
         opacity: 60%;
     }
 
     &__label{
-        max-width: 30%;
-        background: rgba(0,149,246,.3) ;
+        max-width: 31%;
+        // background: rgba(0,149,246,.3) ;
         border-radius: 4px 2px;
-        padding: 3px 3px;
+        padding: 6px 3px;
         margin-bottom: -2px;
         border-bottom: none;
-        color: white;
+        color: black;
         font-family: sans-serif;
+        opacity: 70%;
     }
     &__input{
         border: none;
@@ -947,9 +872,11 @@ $secondColor:#5474FD;
 
     
     .btn{
-
         transition: trasnsform 300ms, background-color 300ms;
         animation: pulse 500ms;
+        font-family: "Aleo", serif;
+        line-height: 26px;
+        color: $mainColor;
         &:hover{
             transform: scale(1.05);
             background-color: lightskyblue;
@@ -987,8 +914,8 @@ $secondColor:#5474FD;
 }
 
 
-input:invalid {
-    background-color: #ffdddd;
+input:invalid, textarea:invalid {
+    background-color: #ffdddd4f;
   }
   
   .form__input:valid {
@@ -1007,7 +934,3 @@ input:invalid {
   }
 
 
-
-  @media only screen and(max-width:769){
-      
-  }
