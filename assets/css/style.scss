@@ -584,7 +584,6 @@ $secondColor:#5474FD;
  
     @media only  screen and(max-width:667px){
         .main__item{
-
             .nav{
                display: block;
                 justify-content: space-around;
@@ -605,19 +604,23 @@ $secondColor:#5474FD;
                 #myNav.social.responsive{
                     display: flex;
                     margin: 0 auto;
-                    flex-direction: row;
-                    margin-top: 20px;
-                   
+                    flex-direction: column;
+                    position: absolute;
+                    left: 0%;
+                    height: auto;
+                    text-align: center;
+                    background: #5474fd;
+                    width: 100%;
+                    z-index: 1;
+                    gap: 60px;
+                    padding: 100px 35px;            
                     .navbar__menu.responsive{
                         overflow: hidden;
-                    }
-
+                  }
                 }
-
                 .social{
                     //  flex-direction: column;
-                     display: none;
-                    
+                     display: none;               
                 }
 
                 .nav.responsive .social{
@@ -626,9 +629,7 @@ $secondColor:#5474FD;
             }
             &--herobg{
                 padding: 100px 100px;
-
             }
-
             &--explore{
                 padding: 100px 100px;
             }
@@ -636,7 +637,6 @@ $secondColor:#5474FD;
             .explorewrap{
                 flex-direction: column-reverse;
                 padding: 20px 20px;
-
                 .explore{
                     padding: 20px 20px;
                 }
@@ -645,28 +645,23 @@ $secondColor:#5474FD;
                     // max-width: 70%; po e prish te screen 600px
                 }
             }
-
             
             &--features{
                 .features{
                     flex-direction: column;
                     gap: 0;
                     padding: 40px 20px;
-
                     &__item{
                         gap: 0;
                     }
-
                     &__description{
                         margin-bottom: 30px;
                         font-size: 30px;
                     }
                 }
-
                 .svg{
                     height: 50px;
                 }
-
             }
 
             &--testimonials{
@@ -701,11 +696,9 @@ $secondColor:#5474FD;
                 padding: 80px 70px;
                 
                 .review{
-
                     &box{
                         flex-direction: column;
                     }
-
                     &box__img{
                         max-width: 100%;
                     }
@@ -714,33 +707,66 @@ $secondColor:#5474FD;
                     }
                 
                 }
-
                 
             }
-
         }
     }
 
 
     @media only  screen and (max-width:992px){
         .main__item{
+                .nav{
+                   display: block;
+                    justify-content: space-around;
+    
+                    &__menubar{
+                        font-size: 26px;
+                        color: #5474fd;
+                        background-color: white;
+                        padding: 6px 8px;
+                        border-radius: 3px;
+                        position: absolute;
+                        right: 5%;
+                        top: 3%; 
+                        display: block;
+                       
+                    }
+                    #myNav.social.responsive{
+                        display: flex;
+                        margin: 0 auto;
+                        flex-direction: column;
+                        position: absolute;
+                        left: 0%;
+                        height: auto;
+                        text-align: center;
+                        background: #5474fd;
+                        width: 100%;
+                        z-index: 1;
+                        gap: 60px;
+                        padding: 100px 35px;            
+                        .navbar__menu.responsive{
+                            overflow: hidden;
+                      }
+                    }
+                    .social{
+                        //  flex-direction: column;
+                         display: none;               
+                    }
+                    .nav.responsive .social{
+                        display: block;
+                    }
+                }
              .btn.btn{
                  padding:15px 15px;
              }
-
-             #myNav.social.responsive{
-                display: flex;
-                margin: 0 auto;
-                flex-direction: row;
-                margin-top: 20px;
-            }
 
 
             &--herobg{
                 padding: 60px 0;  
                 .hero{
                     &__search{
-                    max-width: 500px;
+                        max-width: 350px;
+                        width: 100%;
                     }
                 }
             }
@@ -902,7 +928,7 @@ $secondColor:#5474FD;
 
     &__label{
         max-width: 30%;
-        background: #5474fd;
+        background: rgba(0,149,246,.3) ;
         border-radius: 4px 2px;
         padding: 3px 3px;
         margin-bottom: -2px;
@@ -924,7 +950,6 @@ $secondColor:#5474FD;
 
         transition: trasnsform 300ms, background-color 300ms;
         animation: pulse 500ms;
-
         &:hover{
             transform: scale(1.05);
             background-color: lightskyblue;
@@ -943,14 +968,13 @@ $secondColor:#5474FD;
                 box-shadow: $secondColor 0 0 0;
             }
             to{
-                box-shadow: lightskyblue 0 0 0 ;
+                box-shadow: rgba(0,149,246,.3)  0 0 0 ;
                 border-radius:5px;
                 -webkit-border-radius:5px;
                 -moz-border-radius:5px;
                 -ms-border-radius:5px;
                 -o-border-radius:5px;
-}
-            
+            }           
         }
 
         &--submitform{
@@ -980,4 +1004,10 @@ input:invalid {
   
   input:required:invalid {
     border-color: #c00000;
+  }
+
+
+
+  @media only screen and(max-width:769){
+      
   }

@@ -459,8 +459,16 @@
   .main__item .nav #myNav.social.responsive {
     display: flex;
     margin: 0 auto;
-    flex-direction: row;
-    margin-top: 20px;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    height: auto;
+    text-align: center;
+    background: #5474fd;
+    width: 100%;
+    z-index: 1;
+    gap: 60px;
+    padding: 100px 35px;
   }
   .main__item .nav #myNav.social.responsive .navbar__menu.responsive {
     overflow: hidden;
@@ -532,20 +540,53 @@
   }
 }
 @media only screen and (max-width: 992px) {
-  .main__item .btn.btn {
-    padding: 15px 15px;
+  .main__item .nav {
+    display: block;
+    justify-content: space-around;
   }
-  .main__item #myNav.social.responsive {
+  .main__item .nav__menubar {
+    font-size: 26px;
+    color: #5474fd;
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 3px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    display: block;
+  }
+  .main__item .nav #myNav.social.responsive {
     display: flex;
     margin: 0 auto;
-    flex-direction: row;
-    margin-top: 20px;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    height: auto;
+    text-align: center;
+    background: #5474fd;
+    width: 100%;
+    z-index: 1;
+    gap: 60px;
+    padding: 100px 35px;
+  }
+  .main__item .nav #myNav.social.responsive .navbar__menu.responsive {
+    overflow: hidden;
+  }
+  .main__item .nav .social {
+    display: none;
+  }
+  .main__item .nav .nav.responsive .social {
+    display: block;
+  }
+  .main__item .btn.btn {
+    padding: 15px 15px;
   }
   .main__item--herobg {
     padding: 60px 0;
   }
   .main__item--herobg .hero__search {
-    max-width: 500px;
+    max-width: 350px;
+    width: 100%;
   }
   .main__item--explore .explorewrap {
     flex-direction: column-reverse;
@@ -606,7 +647,7 @@
 }
 .form__label {
   max-width: 30%;
-  background: #5474fd;
+  background: rgba(0, 149, 246, 0.3);
   border-radius: 4px 2px;
   padding: 3px 3px;
   margin-bottom: -2px;
@@ -642,7 +683,7 @@
     box-shadow: #5474FD 0 0 0;
   }
   to {
-    box-shadow: lightskyblue 0 0 0;
+    box-shadow: rgba(0, 149, 246, 0.3) 0 0 0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
