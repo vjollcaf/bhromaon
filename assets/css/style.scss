@@ -87,7 +87,12 @@ html{
                 &:hover{
                     border-bottom: 2px solid white;
                     transition: 0.3s ease-in-out;
-                }
+                    transform: scale(3);
+                    -webkit-transform: scale(3);
+                    -moz-transform: scale(3);
+                    -ms-transform: scale(3);
+                    -o-transform: scale(3);
+}
             }
         }
 
@@ -276,12 +281,25 @@ html{
         align-items: center;
         text-align: center;
         padding: 80px 0 80px 0;
+        position: relative;
+
+        &--halfcircle{
+            position: absolute;
+            top: -21%;
+            left: 22%
+        }
+        &--halfcirclesec{
+            position: absolute;
+            top: -21%;
+            left: 45%;
+        }
         &__item{
             display: flex;
             flex-direction: column;
             gap: 43px;
 
             &:hover{
+
                 a{
                     transform: scale(1.5);
                     transition:0.3 ease-in-out ;
@@ -591,8 +609,16 @@ html{
                 &--herobg{
                     padding: 250px 25px 557px;
                 }
-            }
 
+                &--reviewbg{
+                    .reviewbox{
+
+                        .client{
+                            max-width: 71%;
+                        }
+                    }
+                }
+            }
             .explorewrap{
                 .explore{
                   flex-basis: 100%;
@@ -618,7 +644,7 @@ html{
           }
           .main .client{
             padding: 20px;
-            max-width: 74%;
+            max-width: 51%;
              align-self: unset;
              flex-wrap: wrap;
           }
@@ -715,9 +741,7 @@ html{
                          .navbar__menu.responsive{
                              overflow: hidden;
                        }
-                     }
-
-                     
+                     }                    
                      .social{
                            flex-direction: column;
                           display: none;               
@@ -752,23 +776,30 @@ html{
                      }
                  }
              }
-            
-                
-                     .reviewbox{
-                         display: flex;
-                         flex-direction: column;
+             .features{
+                &--halfcircle, &--halfcirclesec{
+                    display: none;
+                }
+            }                
+              .reviewbox{
+                display: flex;
+                 flex-direction: column;
 
-                     &__img, .client{
-                         max-width: 100%;
-                     }                 
-                   }
-                            
+            &__img, .client{
+                 max-width: 100%;
+                   }                 
+              }
+              .features{
+                &--halfcircle, &--halfcirclesec{
+                    display: none;
+                }
+            }                
              
          }
         
      }
 
-     @media only screen and (max-width: 768px){
+     @media only screen and (max-width: 769px){
         .main{
             &__item{
               &--form{
@@ -780,7 +811,15 @@ html{
                       }
                   }
               }
+              .features{
+                &--halfcircle, &--halfcirclesec{
+                    display: none;
+                }
 
+                &__desctiption{
+                    font-size: 29px;
+                }
+            }
             }
         }
 
@@ -858,6 +897,11 @@ html{
                     flex-direction: column;
                     gap: 0;
                     padding: 40px 20px;
+
+                    &--halfcircle, &--halfcirclesec{
+                         display: none;
+                        }
+                    
                     &__item{
                         gap: 0;
                     }
@@ -999,6 +1043,10 @@ html{
                      flex-direction: column;
                      gap: 0;
                      padding: 40px 20px;
+
+                &--halfcircle, &--halfcirclesec{
+                    display: none;
+                }
                      &__item{
                          gap: 0;
                      }
@@ -1117,6 +1165,12 @@ html{
                   padding: 15px 15px;
               }
 
+              .features{
+                &--halfcircle, &--halfcirclesec{
+                    display: none;
+                }
+              }
+
               .footer{
                   padding:0 ;
               }
@@ -1148,7 +1202,11 @@ html{
                         }
                     }
                 }
-
+              .features{
+                &--halfcircle, &--halfcirclesec{
+                    display: none;
+                }
+              }   
               }
           }
         
