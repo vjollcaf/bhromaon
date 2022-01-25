@@ -447,11 +447,11 @@ html{
             }
         
             &__label{
-                max-width: 31%;
+                
                 // background: rgba(0,149,246,.3) ;
                 border-radius: 4px 2px;
                 padding: 6px 3px;
-                margin-bottom: -2px;
+                margin-bottom: 2px;
                 border-bottom: none;
                 color: white;
                 font-family: sans-serif;
@@ -501,7 +501,6 @@ html{
                 }
         
                 &--submitform{
-                    max-width: 30%;
                     border: none;
                     align-self: center;
                     padding: 15px 40px;
@@ -644,6 +643,28 @@ html{
          }
         
      }
+
+     @media only screen and (max-width: 768px){
+        .main{
+            &__item{
+              &--form{
+                  .form{
+                      max-width: 90%;
+                      &__title{
+                        font-size: 23px;
+                        margin-top: 47px;
+                      }
+                  }
+              }
+
+            }
+        }
+
+     }
+
+
+
+
      @media only  screen and(max-width:667px){
         .main__item{
             .nav{
@@ -765,6 +786,16 @@ html{
                         max-width: 100%;
                     }
                 }    
+            }
+
+            &--footer{        
+                padding: 20px 20px;
+            }
+            .form{
+                max-width: 100%;
+                &__title{
+                    font-size: 33px;
+                }
             }
         }
     }
@@ -961,9 +992,39 @@ html{
               .footer{
                   padding:0 ;
               }
+
+              &--formbg{
+                .form{
+                    max-width: 100%;
+      
+                    &__title{
+                      font-size: 25px;
+                      margin-top: 47px;
+                    }
+                }
+            }
           }
+
+        
+          
       }
 
+      @media only screen and(max-width:361px){
+          .main{
+              &__item{
+                &--form{
+                    .form{
+                        &__title{
+                          font-size: 23px;
+                          margin-top: 47px;
+                        }
+                    }
+                }
+
+              }
+          }
+        
+      }
 
 
 

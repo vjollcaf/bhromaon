@@ -399,10 +399,9 @@ html {
   opacity: 60%;
 }
 .main .form__label {
-  max-width: 31%;
   border-radius: 4px 2px;
   padding: 6px 3px;
-  margin-bottom: -2px;
+  margin-bottom: 2px;
   border-bottom: none;
   color: white;
   font-family: sans-serif;
@@ -448,7 +447,6 @@ html {
   }
 }
 .main .form .btn--submitform {
-  max-width: 30%;
   border: none;
   align-self: center;
   padding: 15px 40px;
@@ -565,6 +563,15 @@ html {
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .main__item--form .form {
+    max-width: 90%;
+  }
+  .main__item--form .form__title {
+    font-size: 23px;
+    margin-top: 47px;
+  }
+}
 @media only screen and (max-width: 667px) {
   .main__item .nav {
     display: block;
@@ -664,6 +671,15 @@ html {
   }
   .main__item--reviewbg .review .client {
     max-width: 100%;
+  }
+  .main__item--footer {
+    padding: 20px 20px;
+  }
+  .main__item .form {
+    max-width: 100%;
+  }
+  .main__item .form__title {
+    font-size: 33px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -803,6 +819,19 @@ html {
   }
   .main__item .footer {
     padding: 0;
+  }
+  .main__item--formbg .form {
+    max-width: 100%;
+  }
+  .main__item--formbg .form__title {
+    font-size: 25px;
+    margin-top: 47px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .main__item--form .form__title {
+    font-size: 23px;
+    margin-top: 47px;
   }
 }
 
