@@ -140,31 +140,37 @@ html{
                 font-family: 'Josefin Sans';
                 font-weight: $regular;
             }
-
-        
-
-
             &__scroll{
                 color: $mainColor;
                 font-family: $fontFamilyFirst;
                 font-size: 14px;
                 line-height: 26px;
-                letter-spacing: 2.8px;   
+                letter-spacing: 2.8px;  
+                
+                animation: fade-slide-up 1s 1s ease-out forwards,
+                pulse 2s 3s ease-out infinite;
+                opacity: 0;
+                i{
+                    color: white;
+                }
             }
              .btn--search{
                  position: absolute;
                  right: 1px;
-                 top: 1px;
+                 top: 3px;
                  justify-content: center;
                  background-color: #5474FD;
                  border: none;
                  color: #ffff;
-                 font-family: "Aleo", serif;
                  font-weight: 400;
                  font-size: 14px;
                  line-height: 26px;
                  letter-spacing: 1.4px;
-                 padding: 21px 38px 10px 23px;
+                 padding: 14px 16px 13px 24px;
+                 font-family: $fontFamilySecond;
+                 display: flex;
+                 align-items: center;
+                gap: 13px;
              }
         } 
         .nav{
@@ -182,6 +188,16 @@ html{
                 text-decoration: none;  
             }
         }  
+
+        .btn--explore:hover, .btn.btn--book:hover{
+            transform: scale(1.05);
+            background-color: 5474fda3;
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            box-shadow: 1px 1px 16px #5474fda3;
+        }
 
     //Explore Section css
     .explorewrap{
@@ -232,10 +248,13 @@ html{
             }
             &__img--left{
                 margin-bottom: 10px;
+                animation: fadein 2s;
             }
             &__img--right{
                 float: right;
-            }
+                animation: fadein 5s;
+                -webkit-animation: fadein 5s;
+}
         }
     }
 
@@ -250,12 +269,43 @@ html{
         &__item{
             display: flex;
             flex-direction: column;
-            gap: 43px
+            gap: 43px;
+
+            &:hover{
+                a{
+                    transform: scale(1.5);
+                    transition:0.3 ease-in-out ;
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                    -webkit-transition:0.3 ease-in-out ;
+                    -moz-transition:0.3 ease-in-out ;
+                    -ms-transition:0.3 ease-in-out ;
+                    -o-transition:0.3 ease-in-out ;
+}
+                .features__description{
+                    font-size: 23px;
+                    transition:0.3s ease-in-out ;
+                    -webkit-transition:0.3s ease-in-out ;
+                    -moz-transition:0.3s ease-in-out ;
+                    -ms-transition:0.3s ease-in-out ;
+                    -o-transition:0.3s ease-in-out ;
+            }
+                // transition:1s ease-in-out ;
+                
+            }
         }
+    
         &__link{
             font-size: 72px;
             margin-bottom: 35px;
             font-weight: normal;
+
+            &:hover{
+                transform: scale(1.5);
+                transition: 0.1s ease-in;
+            }
         }
         &__link--blue{
             color: $secondColor;
@@ -475,11 +525,12 @@ html{
                 color: $mainColor;
                 &:hover{
                     transform: scale(1.05);
-                    background-color: lightskyblue;
+                    background-color: 5474fda3;
                     -webkit-transform: scale(1.05);
                     -moz-transform: scale(1.05);
                     -ms-transform: scale(1.05);
                     -o-transform: scale(1.05);
+                    box-shadow: 1px 1px 16px #5474fda3;
                 }
                 &:active{
                     transform: scale(0.95);
@@ -562,6 +613,61 @@ html{
              flex-wrap: wrap;
           }
       }
+
+
+      //animations
+      @keyframes fade-slide-down {
+        0% {
+          opacity: 0;
+          transform: translateY(-4rem);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      
+      @keyframes fade-slide-up {
+        0% {
+          opacity: 0;
+          transform: translateY(4rem);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      
+      @keyframes pop-in {
+        0% {
+          opacity: 0;
+          transform: translateY(-4rem) scale(.8);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+          transform: none;
+        }
+        50% {
+          opacity: .8;
+          transform: scale(.8);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+      
      @media only  screen and (max-width:992px){
          .main__item{
                  .nav{
@@ -612,7 +718,7 @@ html{
                  padding: 200px 0;  
                  .hero{
                      &__search{
-                         max-width: 350px;
+                         max-width: 450px;
                      width: 100%;
                      }
                  }
@@ -741,9 +847,15 @@ html{
                         margin-bottom: 30px;
                         font-size: 30px;
                     }
+
+                    
                 }
                 .svg{
                     height: 50px;
+                    &:hover{
+                        transform: scale(1.5);
+                        transition: 0.1s ease-in;
+                    }
                 }
             }
 
