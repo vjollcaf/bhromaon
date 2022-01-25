@@ -99,6 +99,9 @@ html{
             // width: 40%;
             margin:0 auto;
             
+            #myHero.hero.responsive{
+                display: none;
+             }
             &__title{
                 font-family: $fontFamilyFirst;
                 font-size: 48px;
@@ -682,17 +685,19 @@ html{
                      justify-content: space-around;
     
                      &__menubar{
-                         font-size: 26px;
+                         font-size: 24px;
                          color: #5474fd;
                          background-color: white;
                          padding: 6px 8px;
                          border-radius: 3px;
                          position: absolute;
-                         right: 5%;
-                         top: 11%; 
+                         right: 3%;
+                         top: 22%; 
                          display: block;
                        
                      }
+
+                   
                      #myNav.social.responsive{
                          display: flex;
                          margin: 0 auto;
@@ -705,11 +710,14 @@ html{
                          width: 100%;
                          z-index: 1;
                          gap: 60px;
-                         padding: 100px 35px;            
+                         padding: 100px 35px;  
+                         opacity: 70%;          
                          .navbar__menu.responsive{
                              overflow: hidden;
                        }
                      }
+
+                     
                      .social{
                            flex-direction: column;
                           display: none;               
@@ -723,7 +731,10 @@ html{
               }
              &--herobg{
                  padding: 200px 0;  
-                 .hero{
+                 #myHero.hero.responsive{
+                    display: none;
+                 }
+                 .hero{  
                      &__search{
                          max-width: 450px;
                      width: 100%;
@@ -785,14 +796,14 @@ html{
                 justify-content: space-around;
 
                 &__menubar{
-                    font-size: 26px;
+                    font-size: 24px;
                     color: #5474fd;
                     background-color: white;
                     padding: 6px 8px;
                     border-radius: 3px;
                     position: absolute;
-                    right: 5%;
-                    top: 11%; 
+                    right: 3%;
+                    top: 22%; 
                     display: block;
                   
                 }
@@ -1073,7 +1084,7 @@ html{
 
                       .gallery{
                            max-width: 94%; 
-                           padding: 20px 0;
+                           padding: 20px 5px;
                       }
                   }
               }

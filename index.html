@@ -45,7 +45,7 @@
       </div>
       
       <div class="main__item main__item--herobg">
-        <div class="hero">
+        <div class="hero" id="myHero">
             <div class="hero__heading">
               <h1 class="hero__title">BHROMAON</h1>
               <p class="hero__description">Safe Travel Anywhere</p>
@@ -177,7 +177,23 @@
       } else {
         x.className = "social";
       }
+
+      var hero = document.getElementById("myHero");
+      if (hero.className === "hero") {
+        hero.className += " responsive";
+      } else {
+        hero.className = "hero";
+      }
     }
+
+    // function hideHero() {
+    //   var hero = document.getElementById("myHero");
+    //   if (x.className === "hero") {
+    //     x.className += " responsive";
+    //   } else {
+    //     x.className = "hero";
+    //   }
+    // }
     </script>
 
 </body>

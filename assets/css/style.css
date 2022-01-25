@@ -85,6 +85,9 @@ html {
   text-align: center;
   margin: 0 auto;
 }
+.main .hero #myHero.hero.responsive {
+  display: none;
+}
 .main .hero__title {
   font-family: "Josefin Sans", sans-serif;
   font-size: 48px;
@@ -605,14 +608,14 @@ html {
     justify-content: space-around;
   }
   .main__item .nav__menubar {
-    font-size: 26px;
+    font-size: 24px;
     color: #5474fd;
     background-color: white;
     padding: 6px 8px;
     border-radius: 3px;
     position: absolute;
-    right: 5%;
-    top: 11%;
+    right: 3%;
+    top: 22%;
     display: block;
   }
   .main__item .nav #myNav.social.responsive {
@@ -628,6 +631,7 @@ html {
     z-index: 1;
     gap: 60px;
     padding: 100px 35px;
+    opacity: 70%;
   }
   .main__item .nav #myNav.social.responsive .navbar__menu.responsive {
     overflow: hidden;
@@ -644,6 +648,9 @@ html {
   }
   .main__item--herobg {
     padding: 200px 0;
+  }
+  .main__item--herobg #myHero.hero.responsive {
+    display: none;
   }
   .main__item--herobg .hero__search {
     max-width: 450px;
@@ -681,14 +688,14 @@ html {
     justify-content: space-around;
   }
   .main__item .nav__menubar {
-    font-size: 26px;
+    font-size: 24px;
     color: #5474fd;
     background-color: white;
     padding: 6px 8px;
     border-radius: 3px;
     position: absolute;
-    right: 5%;
-    top: 11%;
+    right: 3%;
+    top: 22%;
     display: block;
   }
   .main__item .nav #myNav.social.responsive {
@@ -909,7 +916,7 @@ html {
   }
   .main__item--explore .explorewrap .gallery {
     max-width: 94%;
-    padding: 20px 0;
+    padding: 20px 5px;
   }
   .main__item--testimonials .testimonials--left {
     width: 100%;
