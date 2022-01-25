@@ -249,18 +249,18 @@ html {
   gap: 105px;
   align-items: center;
   text-align: center;
-  padding: 80px 0 80px 0;
+  padding: 90px 0 80px 0;
   position: relative;
 }
 .main .features--halfcircle {
   position: absolute;
-  top: -21%;
-  left: 22%;
+  top: -22%;
+  left: 29%;
 }
 .main .features--halfcirclesec {
   position: absolute;
-  top: -21%;
-  left: 45%;
+  top: -26%;
+  left: 52%;
 }
 .main .features__item {
   display: flex;
