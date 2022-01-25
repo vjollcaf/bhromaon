@@ -245,15 +245,22 @@ html{
             &__img{
                 max-width: 350px;
                 width: 100%;
+                
             }
             &__img--left{
                 margin-bottom: 10px;
                 animation: fadein 2s;
+                &:hover{
+                    opacity: 90%;
+                }
             }
             &__img--right{
                 float: right;
                 animation: fadein 5s;
                 -webkit-animation: fadein 5s;
+                &:hover{
+                    opacity: 90%;
+                }
 }
         }
     }
@@ -490,7 +497,7 @@ html{
                 font-family: "Josefin Sans", sans-serif;
                 font-weight: 300;
                 line-height: 26px;
-                color: black;
+                color: $mainColor;
                 font-size: 20px;
                 margin-bottom: 10px;
                 opacity: 60%;
@@ -939,7 +946,7 @@ html{
                          max-width: 350px;
                      }
                      &__input{
-                         width: 60%;
+                         width: 70%;
                          font-size: 11px;
                      }
                      .btn--search{
@@ -1036,10 +1043,8 @@ html{
               &--herobg{
                 padding: 200px 0;
                   .hero{
-
-
                       &__search{
-                       max-width: 250px;
+                       max-width: 300px;
                       }
 
                       &__input{
@@ -1047,7 +1052,7 @@ html{
                       }
 
                       .btn--search{
-                          padding: 16px 7px;
+                          padding: 14px 7px;
                       }
                   }
               }
